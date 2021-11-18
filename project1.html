@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush's GYM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        body {
+            color: white;
+            background: url('gym.jpg');
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            font-size: 23px;
+        }
+
+        .leftBox {
+            /* border: 2px solid red; */
+            padding: 14px;
+            position: absolute;
+            left: 30px;
+            top: 6px;
+
+        }
+
+        .leftBox img {
+            width: 119px;
+            /* height: 20px; */
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        .leftBox p {
+            margin: -18px;
+            /* position: absolute;
+            left: 27px;  */
+            /* color: rgb(255, 238, 0); */
+            text-align: center;
+        }
+
+        .middleBox {
+            /* border: 2px solid blue; */
+            padding: 14px;
+            /* display: block; */
+            width: 36%;
+            margin: 20px auto;
+
+        }
+
+        .rightBox {
+            /* border: 2px solid green; */
+            padding: 14px;
+            position: absolute;
+            right: 44px;
+            top: 42px;
+
+        }
+
+        .btn {
+            font-size: 22px;
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+            width: 120px;
+            padding: 3px 4px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgba(39, 33, 33, 0.623);
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            margin: 2px 13 px;
+            padding: 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: red;
+
+        }
+
+        .container {
+
+            border: 2px solid white;
+            border-radius: 28px;
+            font-size: 25px;
+            display: block;
+            width: 724px;
+            padding: 32px 56px;
+            margin: 155px 184px;
+            text-align: center;
+
+        }
+
+
+        .form-group {
+            font-size: 25px;
+            display: block;
+            width: 510px;
+            margin: 21px auto;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+
+        .bottom {
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            margin: 15px 0px;
+            padding: 8px 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="leftBox">
+            <img src="dumbbelloo.png" alt="load nahi horaha">
+            <p>Ayush's GYM</p>
+        </div>
+
+        <div class="middleBox">
+            <!-- This is second block -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+
+        </div>
+
+        <div class="rightBox">
+            <button class="btn">search</button>
+            <button class="btn">contact</button>
+
+        </div>
+
+        <div class="container">
+
+            <h1>Join the best GYM now !</h1>
+            <input type="text" class="form-group" placeholder="Enter your name">
+            <input type="number" class="form-group" placeholder="Enter your age">
+            <input type="number" class="form-group" placeholder="Enter your number">
+            <input type="text" class="form-group" placeholder="Enter your locality">
+            <input type="text" class="form-group" placeholder="How u get to know about us">
+            <input type="text" class="form-group" placeholder="Aur Batao">
+            <!-- <input type="date" class="form-group" placeholder="Enter date of joining"> -->
+            <button class="bottom">submit</button>
+            <button type="reset" class="bottom">reset</button>
+
+            <!-- <input type="button" value="jai ho" >
+            <button>kaka</button> -->
+
+            <!-- <input type=""> -->
+        </div>
+
+
+    </header>
+
+
+
+</body>
+
+</html>
+
+
+<!-- 
+1. filter
+2. if u want to increase the size of the block increase by 'width' operator or padding or marging ...
+    ans for increasing the text inside... increase the font value ....(eg here in btn)
+3. for making the reset button functional it should be in the form tag....
+ -->
